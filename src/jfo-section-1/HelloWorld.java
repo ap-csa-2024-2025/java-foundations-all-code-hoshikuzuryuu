@@ -1,16 +1,13 @@
-public class HelloWorld {
+import java.util.Scanner;
 
+public class HelloWorld {
+   
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
-        byte b = 2;
-        long l = 6353413233214311325L;
-        short s = 1000;
-        
-        int i=0;
-        while(i<10)
-        {
-            System.out.println(i++);
-        }
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter your grade level (number): " );
+        int grade = sc.nextInt();
+        System.out.println("Next year, youa re in grade " + (grade+1));
+     sc.close();   
     }
-}
+}   
